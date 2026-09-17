@@ -1,0 +1,3 @@
+model,functions,edges,target_id,target_name,variable_functions,fixed_functions,combinations,distinct_values,mean,std,variance,min,p50,p95,max
+original,25,33,19,轨迹跟踪控制,24,[],282429536481,67,33.0,9.055385138137417,82.0,0.0,33.0,48.0,66.0
+mitigated,30,38,19,轨迹跟踪控制,24,"[25, 26, 27, 28, 29]",282429536481,921,29.6875,6.0071571895531415,36.0859375,0.0,29.6875,39.625,59.375

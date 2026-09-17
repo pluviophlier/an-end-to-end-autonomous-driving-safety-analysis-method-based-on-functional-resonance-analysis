@@ -1,0 +1,90 @@
+{
+  "method": "Exact weighted distribution by convolution on an acyclic FRAM graph",
+  "assumptions": {
+    "endogenous_variation_levels": [
+      0,
+      1,
+      2
+    ],
+    "levels_equally_weighted_and_independent": true,
+    "target_endogenous_variation": 0,
+    "mitigation_function_endogenous_variation": 0,
+    "aspects": [
+      "C",
+      "I",
+      "P"
+    ],
+    "edge_weights": "Use supplied CSV values without substitution"
+  },
+  "inputs": {
+    "original": {
+      "model": "models/original.xfmv",
+      "model_sha256": "513cb5d0f2a680bff7bc0a71af23686fdbd9f1255e674cd571af86ff05c7fc7e",
+      "weights": "configs/original_weights.csv",
+      "weights_sha256": "123d5dedb9e661c5af4a2e702a105ba75dbb3e35b8e836f27c55b827ba4a38fd"
+    },
+    "mitigated": {
+      "model": "models/mitigated.xfmv",
+      "model_sha256": "b93bd338c2699e456babe3acf47522885ba593ab88353fe796fe1bfe4cd64aed",
+      "weights": "configs/mitigated_weights.csv",
+      "weights_sha256": "f7ed296e62b1550518d73bf4e71b90853c20306f3871d6f7447bb68026f01eff"
+    }
+  },
+  "paper_table_6_comparison": {
+    "original": {
+      "mean": {
+        "paper": 33.0,
+        "computed": 33.0,
+        "difference": 0.0
+      },
+      "std": {
+        "paper": 9.07,
+        "computed": 9.055385138137417,
+        "difference": -0.014615
+      },
+      "min": {
+        "paper": 0.0,
+        "computed": 0.0,
+        "difference": 0.0
+      },
+      "max": {
+        "paper": 64.0,
+        "computed": 66.0,
+        "difference": 2.0
+      },
+      "p95": {
+        "paper": 48.0,
+        "computed": 48.0,
+        "difference": 0.0
+      }
+    },
+    "mitigated": {
+      "mean": {
+        "paper": 24.2,
+        "computed": 29.6875,
+        "difference": 5.4875
+      },
+      "std": {
+        "paper": 6.37,
+        "computed": 6.0071571895531415,
+        "difference": -0.362843
+      },
+      "min": {
+        "paper": 0.0,
+        "computed": 0.0,
+        "difference": 0.0
+      },
+      "max": {
+        "paper": 44.3,
+        "computed": 59.375,
+        "difference": 15.075
+      },
+      "p95": {
+        "paper": 34.4,
+        "computed": 39.625,
+        "difference": 5.225
+      }
+    }
+  },
+  "paper_table_6_reproduced": false
+}
