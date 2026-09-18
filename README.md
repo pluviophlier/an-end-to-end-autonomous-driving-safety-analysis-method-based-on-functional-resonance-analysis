@@ -66,5 +66,4 @@ original run configuration is recovered and checked.
 
 ## License
 
-No license for the authors' code has been selected. The authors should choose
-one before inviting others to reuse or modify this public repository.
+The repository is released under the Apache License 2.0. See `LICENSE`.
