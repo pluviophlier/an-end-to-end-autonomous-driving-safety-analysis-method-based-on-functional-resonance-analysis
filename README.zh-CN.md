@@ -4,6 +4,12 @@
 Based on Functional Resonance Analysis*（ATS.2025.302）使用的两套 FRAM 模型、
 边权重和变化传播分析程序。这里没有 VAD 训练代码、NuScenes 数据或驾驶图像。
 
+## 方法概览
+
+![FRAM 整体分析框架](docs/images/method-overview.png)
+
+*图 1. 整体分析框架，直接提取自正式出版论文。*
+
 ## 运行
 
 需要 Python 3.12 或更新版本；不需要安装第三方 Python 包。在仓库根目录运行：
@@ -26,6 +32,12 @@ python -m unittest discover -s tests -v
 - 沿输入、控制、前提条件三类边传播，使用 CSV 中记录的权重。
 
 这些假设让程序可以用卷积精确汇总所有组合，无需逐条保存。
+
+## 论文实验结果
+
+![论文报告的目标节点变化分布对比](docs/images/paper-experiment-comparison.png)
+
+*图 2. 正式出版论文报告的目标节点变化分布对比（论文 Figure 5）。该图展示论文原始实验结果；由于下述复现差异，它可能与本仓库重新计算的结果不同。*
 
 ## 与论文结果的差异
 

@@ -13,6 +13,12 @@ It contains the two FRAM models and their edge weights. It does **not** contain
 VAD training code, NuScenes data, driving images, or trained network weights.
 Those items are outside the scope of this analysis code.
 
+## Method overview
+
+![Overall FRAM analysis framework](docs/images/method-overview.png)
+
+*Figure 1. Overall analysis framework, extracted directly from the published paper.*
+
 ## Run
 
 Use Python 3.12 or later. The analysis uses only the Python standard library.
@@ -44,6 +50,12 @@ of its predecessors' total variation. The target has no endogenous variation.
 These explicit assumptions allow the target distribution to be computed
 exactly by convolution without listing every combination. The program rejects
 cycles and any mismatch between a model and its weight table.
+
+## Published experiment
+
+![Published comparison of target-node variability distributions](docs/images/paper-experiment-comparison.png)
+
+*Figure 2. Comparison of the target-node variability distributions reported in the published paper (published as Figure 5). This image presents the paper's reported experiment and may differ from the reconstruction produced by this repository, as documented below.*
 
 ## Relationship to the published numbers
 
